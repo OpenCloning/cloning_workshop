@@ -69,8 +69,8 @@ To add yourself to the list, go to the [contributors file](https://github.com/Op
 
 That will take you to a text editor where you should add a line with your name , ORCID and GitHub username separated by commas (see text highlighted in blue). Once, you are done, click on the green Commit changes button.
 
-![add line to contributors file](./media/add_line.png)
+![add line to contributors file](./media/add_entry.png)
 
 Then, select "Create a new branch for this commit and start a pull request" and click on the green "Propose changes" button. You are done!
 
-![create pull request](./media/create_pr.png)
+![create pull request](./media/create_pr.png){width=150}
