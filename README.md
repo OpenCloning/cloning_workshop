@@ -59,7 +59,3 @@ From the text in the paper, identify which plasmids or alleles were created for 
 
 When you have finished, simply [create an issue](https://github.com/OpenCloning/cloning_workshop/issues/new?template=submission_en.yml) and fill the form.
 
-
-
-
-
