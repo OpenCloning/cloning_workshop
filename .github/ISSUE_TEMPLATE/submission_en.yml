@@ -1,7 +1,7 @@
 name: Submission [ENGLISH]
 description: Submit cloning information for a paper
 title: "PMID:XXXXXX"
-labels: [bug, needs-triage]
+labels: [submission]
 body:
   - type: markdown
     attributes:
