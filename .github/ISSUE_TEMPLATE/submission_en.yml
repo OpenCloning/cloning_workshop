@@ -46,7 +46,7 @@ body:
       required: true
 
   - type: input
-    id: orcid-1
+    id: orcid-2
     attributes:
       label: "Submitter 2 ORCID"
       description: "Enter your ORCID if you have one (optional)."
@@ -148,17 +148,17 @@ body:
       label: "Cloning Techniques Used"
       description: "Select the cloning techniques used in the paper"
       options:
-        - label: "Gibson Assembly"
-        - label: "Golden Gate"
-        - label: "Gateway Cloning"
-        - label: "CRISPR/Cas9"
-        - label: "Homologous Recombination"
-        - label: "Traditional Restriction Enzyme Cloning"
-        - label: "PCR Cloning"
-        - label: "Overlap Extension"
-        - label: "In-Fusion Cloning"
-        - label: "De-novo DNA synthesis"
-        - label: "Other (please specify in notes)"
+        - label: Gibson Assembly
+        - label: Golden Gate
+        - label: Gateway Cloning
+        - label: CRISPR/Cas9
+        - label: Homologous Recombination
+        - label: Traditional Restriction Enzyme Cloning
+        - label: PCR Cloning
+        - label: Overlap Extension
+        - label: In-Fusion Cloning
+        - label: De-novo DNA synthesis
+        - label: Other (please specify in notes)
 
   - type: textarea
     id: cloning_text
