@@ -73,4 +73,4 @@ That will take you to a text editor where you should add a line with your name ,
 
 Then, select "Create a new branch for this commit and start a pull request" and click on the green "Propose changes" button. You are done!
 
-![create pull request](./media/create_pr.png){width=150}
+<img src="./media/create_pr.png" width="300" alt="create pull request">
