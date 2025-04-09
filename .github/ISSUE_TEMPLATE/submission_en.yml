@@ -1,0 +1,212 @@
+name: Submission [ENGLISH]
+description: Submit cloning information for a paper
+title: "PMID:XXXXXX"
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: "## Submitter Details"
+
+  # Submitter 1 =================================
+  - type: input
+    id: full-name-1
+    attributes:
+      label: "Submitter 1 full name"
+      description: "Enter your full name (optional)."
+      placeholder: "Full Name"
+    validations:
+      required: true
+
+  - type: input
+    id: orcid-1
+    attributes:
+      label: "Submitter 1 ORCID"
+      description: "Enter your ORCID if you have one (optional)."
+      placeholder: "ORCID:XXXX-XXXX-XXXX-XXXX"
+    validations:
+      required: false
+
+  - type: input
+    id: github-1
+    attributes:
+      label: "Submitter 1 GitHub username"
+      description: "Enter your GitHub username (optional)."
+      placeholder: "GitHub username"
+    validations:
+      required: true
+
+  # Submitter 2 =================================
+  - type: input
+    id: full-name-2
+    attributes:
+      label: "Submitter 2 full name"
+      description: "Enter your full name (optional)."
+      placeholder: "Full Name"
+    validations:
+      required: true
+
+  - type: input
+    id: orcid-1
+    attributes:
+      label: "Submitter 2 ORCID"
+      description: "Enter your ORCID if you have one (optional)."
+      placeholder: "ORCID:XXXX-XXXX-XXXX-XXXX"
+    validations:
+      required: false
+
+  - type: input
+    id: github-2
+    attributes:
+      label: "Submitter 2 GitHub username"
+      description: "Enter your GitHub username (optional)."
+      placeholder: "GitHub username"
+    validations:
+      required: true
+
+  # Submitter 3 =================================
+  - type: input
+    id: full-name-3
+    attributes:
+      label: "Submitter 3 full name"
+      description: "Enter your full name (optional)."
+      placeholder: "Full Name"
+    validations:
+      required: true
+
+  - type: input
+    id: orcid-3
+    attributes:
+      label: "Submitter 3 ORCID"
+      description: "Enter your ORCID if you have one (optional)."
+      placeholder: "ORCID:XXXX-XXXX-XXXX-XXXX"
+    validations:
+      required: false
+
+  - type: input
+    id: github-3
+    attributes:
+      label: "Submitter 3 GitHub username"
+      description: "Enter your GitHub username (optional)."
+      placeholder: "GitHub username"
+    validations:
+      required: true
+
+  # Publication Details =================================
+
+  - type: markdown
+    attributes:
+      value: "## Publication Details"
+
+  - type: input
+    id: pmid
+    attributes:
+      label: "PMID"
+      description: "Enter the PMID of the paper."
+      placeholder: "PMID:XXXXXX"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: "Title"
+      description: "Enter the title of the paper."
+      placeholder: "Title of the paper"
+    validations:
+      required: true
+
+  # Publication Details =================================
+
+  - type: markdown
+    attributes:
+      value: "## Cloning Details"
+
+  - type: dropdown
+    id: cloning_detail_level
+    attributes:
+      label: "Cloning Detail Level"
+      description: "Select the level of detail of the cloning information."
+      options:
+        - Cloning information completely missing
+        - Cloning information present, but not sufficient to reproduce
+        - Cloning information present and sufficient to reproduce
+    validations:
+      required: true
+
+  - type: textarea
+    id: plasmids_and_alleles
+    attributes:
+      label: "Plasmids and Alleles"
+      description: "List the names and identifiers of the plasmids or alleles engineered in the paper."
+      placeholder: "* plasmid xyz: used to express lacZ in E. coli\n* allele abc: deletion of gene xyz in S. cerevisiae"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: cloning_techniques
+    attributes:
+      label: "Cloning Techniques Used"
+      description: "Select the cloning techniques used in the paper"
+      options:
+        - label: "Gibson Assembly"
+        - label: "Golden Gate"
+        - label: "Gateway Cloning"
+        - label: "CRISPR/Cas9"
+        - label: "Homologous Recombination"
+        - label: "Traditional Restriction Enzyme Cloning"
+        - label: "PCR Cloning"
+        - label: "Overlap Extension"
+        - label: "In-Fusion Cloning"
+        - label: "De-novo DNA synthesis"
+        - label: "Other (please specify in notes)"
+
+  - type: textarea
+    id: cloning_text
+    attributes:
+      label: "Cloning Text (if available)"
+      description: "Copy and paste the sections of the paper that describe cloning. Include all files by dropping them in the text box (primer lists, sequence files, etc.)"
+      placeholder: "mCherry was amplified from plasmid xyz using primers abc and def, then [...]"
+    validations:
+      required: false
+
+  - type: textarea
+    id: cloning_strategies
+    attributes:
+      label: "Cloning Strategies"
+      description: "Drag and drop all json files with cloning strategies (whatever you managed to extract from the paper, it can be simply the starting sequences, primers, etc.)."
+      placeholder: "Drop your files here"
+    validations:
+      required: false
+
+  - type: textarea
+    id: missing_information
+    attributes:
+      label: "Missing information (if any)"
+      description: "Describe the information or sequences that would have been needed to reproduce the cloning, but were missing."
+      placeholder: "The sequence of plasmids xyz was not provided and we could not find it online, the primers used for gibson assembly were not provided, etc."
+    validations:
+      required: false
+
+  - type: textarea
+    id: present_information
+    attributes:
+      label: "Present information (if any)"
+      description: "If you did not manage to reproduce the cloning, describe what information you could find in the paper, even if it is not sufficient to reproduce the cloning."
+      placeholder: "The sequence of plasmids xyz was provided in the supplementary material, the primers used for gibson assembly were provided in the supplementary material, etc."
+    validations:
+      required: false
+
+  - type: textarea
+    id: assumptions
+    attributes:
+      label: "Assumptions"
+      description: "If you had to make assumptions to reproduce the cloning, describe them here."
+      placeholder: "We could not find an exact reference for the sequence of plasmid xyz, but via google search we found it here: https://www..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes"
+      description: "Any additional notes or comments."
