@@ -1,4 +1,4 @@
-# 🧬 OpenCloning cloning workshop
+# 🧬 Cloning documentation workshop
 
 This is a workshop in which attendees will choose scientific papers where plasmids or genomes were engineered, and they will try to reproduce _in silico_ the cloning process using [OpenCloning](https://opencloning.org).
 
