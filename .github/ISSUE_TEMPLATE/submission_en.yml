@@ -43,7 +43,7 @@ body:
       description: "Enter your full name (optional)."
       placeholder: "Full Name"
     validations:
-      required: true
+      required: false
 
   - type: input
     id: orcid-2
@@ -61,7 +61,7 @@ body:
       description: "Enter your GitHub username (optional)."
       placeholder: "GitHub username"
     validations:
-      required: true
+      required: false
 
   # Submitter 3 =================================
   - type: input
@@ -71,7 +71,7 @@ body:
       description: "Enter your full name (optional)."
       placeholder: "Full Name"
     validations:
-      required: true
+      required: false
 
   - type: input
     id: orcid-3
@@ -89,7 +89,7 @@ body:
       description: "Enter your GitHub username (optional)."
       placeholder: "GitHub username"
     validations:
-      required: true
+      required: false
 
   # Publication Details =================================
 
