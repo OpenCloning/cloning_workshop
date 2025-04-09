@@ -59,3 +59,18 @@ From the text in the paper, identify which plasmids or alleles were created for 
 
 When you have finished, simply [create an issue](https://github.com/OpenCloning/cloning_workshop/issues/new?template=submission_en.yml) and fill the form.
 
+### Add your name to the list of contributors
+
+For GitHub to list you as a contributor, you must have added code to the repository from your GitHub account. The easiest way to do this is to add yourself to the contributors file.
+
+To add yourself to the list, go to the [contributors file](https://github.com/OpenCloning/cloning_workshop/blob/master/contributors.csv) and add a line with your name, ORCID and GitHub username by clicking on the pencil icon on the top right of the file.
+
+![go to edit mode in github](./media/edit.png)
+
+That will take you to a text editor where you should add a line with your name , ORCID and GitHub username separated by commas (see text highlighted in blue). Once, you are done, click on the green Commit changes button.
+
+![add line to contributors file](./media/add_line.png)
+
+Then, select "Create a new branch for this commit and start a pull request" and click on the green "Propose changes" button. You are done!
+
+![create pull request](./media/create_pr.png)
