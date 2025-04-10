@@ -137,8 +137,8 @@ body:
     id: plasmids_and_alleles
     attributes:
       label: "Plasmids and Alleles"
-      description: "List the names and identifiers of the plasmids or alleles engineered in the paper."
-      placeholder: "* plasmid xyz: used to express lacZ in E. coli\n* allele abc: deletion of gene xyz in S. cerevisiae"
+      description: "List the names and identifiers of the plasmids or alleles engineered in the paper. If they have an identifier in a repository, use it."
+      placeholder: "* plasmid xyz: used to express lacZ in E. coli, has identifier 123 in Addgene\n* allele abc: deletion of gene xyz in S. cerevisiae, has identifier abc in SGD"
     validations:
       required: false
 
